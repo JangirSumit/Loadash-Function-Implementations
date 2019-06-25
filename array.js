@@ -33,7 +33,7 @@ console.log(compact([0, 1, false, 2, '', 3])); // [1, 2, 3]
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-//3: _.concat(array, [values])
+// 3: _.concat(array, [values])
 // Creates a new array concatenating array with any additional arrays and/or values.
 
 function concat(arr, ...values) {
@@ -45,3 +45,7 @@ var other = concat(array, 2, [3], [[4]]);
 console.log(other); // [1, 2, 3, Array(1)]
 
 /////////////////////////////////////////////////////////////////////////////////////
+
+// 4. _.difference(array, [values])
+// Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons. 
+// The order and references of result values are determined by the first array.
