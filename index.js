@@ -1,3 +1,6 @@
+//https://lodash.com/docs/#chunk
+
+
 // 1: _.chunk(array, [size=1])
 // Creates an array of elements split into groups the length of size. 
 // If array can't be split evenly, the final chunk will be the remaining elements.
@@ -26,4 +29,19 @@ function compact(arr) {
     return arr.filter((ele) => !!ele);
 }
 
-console.log(compact([0, 1, false, 2, '', 3]));
+console.log(compact([0, 1, false, 2, '', 3])); // [1, 2, 3]
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+//3: _.concat(array, [values])
+// Creates a new array concatenating array with any additional arrays and/or values.
+
+function concat(arr, ...values) {
+    return arr.concat(...values);
+}
+
+var array = [1];
+var other = concat(array, 2, [3], [[4]]);
+console.log(other); // [1, 2, 3, Array(1)]
+
+/////////////////////////////////////////////////////////////////////////////////////
