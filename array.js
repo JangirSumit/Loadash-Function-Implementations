@@ -49,3 +49,9 @@ console.log(other); // [1, 2, 3, Array(1)]
 // 4. _.difference(array, [values])
 // Creates an array of array values not included in the other given arrays using SameValueZero for equality comparisons. 
 // The order and references of result values are determined by the first array.
+
+function difference(arr1, arr2) {
+    return arr1.filter((ele) => arr2.indexOf(ele) == -1);
+}
+
+console.log(difference([2, 1], [2, 3]));
